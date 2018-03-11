@@ -1,30 +1,60 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title> Document </title>
+  <title> stam homepage </title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
+  <script src="jquery-3.3.1.min.js"></script>
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('.parent-conteiner').magnificPopup({
+        delegate: 'a',
+        type: 'image'
+      });
+      $('.hide').hide();
+      $('.show-img').on('click', function() {
+        var text = $('.hide').is(':visible') ? 'Показать блок' : "Скрыть блок";
+        $('.show-img').text(text);
+        $('.hide').slideToggle(500);
+      });
+    });
+  </script>
 </head>
+
 <body>
-  <header>
-    <a href="index.html"> Hauptseite </a>
-    <a href="project.html"> Projecte </a>
-    <a href="contact.html"> Kontakte für die Kommunikation </a>
-  </header>
-  <h1> Kontakte für die Kommunikation</h1>
+  <div class="container">
+    <div class="content">
+      <header>
+        <a href="index.html"> HOME </a>
+        <a href="project.html"> PROJECT </a>
+        <a href="contact.html"> CONTACTS </a>
+      </header>
+      <h1> My Contact </h1>
 
-  <main>
-    <img src="image/photo.png" alt="photo">
-    <p> Telephone number: +4 999 01 02 03 <br>
-        E-mail: fury@round.de <br>
-        Germany, Frankfurt am Main, Mainzer Landstrasse,93 <br>
-    </p>
+      <div class="your-class">
+        <sp></sp>
+        <a href="image/aplifer.jpg"><img src="image/tester.jpg" alt="photo"> </a>
+        <sp></sp>
+        <a href="image/dialer.jpg"><img src="image/jteg.jpg" alt="photo"> </a>
+        <sp></sp>
+        <a href="image/programm.jpg"><img src="image/pirat.jpg" alt="photo"> </a>>
+        <sp></sp>
+      </div>
+    </div>
+    <footer> Copyright 2018 </footer>
+  </div>
+  <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.your-class').slick({});
+    });
+  </script>
 
-  </main>
 
-<footer>
-  <br> <br> <br> Montag, 5. März 2018 00:31 Uhr
-</footer>
 </body>
+
 </html>

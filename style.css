@@ -1,19 +1,43 @@
-h1
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300i,400,700');
+
+head
 {
-  font-family: sans-serif;
-  color: #3d302e;
-  font-size:40px;
-  font-weight: 300;
-  text-align: center;
+  background-color: #434445;
 }
+
+body
+{
+  font-family: 'Roboto',sans-serif;
+}
+
+html,
+body
+{
+  height: 100%;
+}
+
+.container
+{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content
+{
+  flex: 1;
+}
+
+
+
 header
 {
   border-width: 0.14px;
   border-color: #b5b7ba;
   border-style: solid;
   background-color: #dfdfdf;
-  width: 1920px;
-  height: 68px;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -21,48 +45,82 @@ header
 
 header a
 {
-  font-family: sans-serif;
-  color: #4d4d44d;
-  font-size: 24px;
+  color:#4d4d4d;
+  font-size: 25px;
   font-weight: 100;
   text-align: left;
   text-decoration: none;
 }
 
-main
+h1
+{
+  color:#2e353d;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.show-img
+{
+  display: block;
+  margin: 0 auto 3%;
+  width: 150px;
+  height: 40px;
+}
+
+.main
 {
   display: flex;
-  justify-content: space-around;
-  padding: 2%;
-  align-items: center;
+  color: #24242424;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 36px;
+  text-align: center;
+  padding: 1%;
   flex-wrap: wrap;
 }
 
+.main img
+{
+  width: 250px;
+  height: 400px;
+}
+
+.project-img img
+{
+  width: 250px;
+  height: 200px;
+}
+
+sp
+{
+  width: 8%;
+}
+
+ivb
+{
+  width:50px;
+}
+
+
 p
 {
-  font-family: sans-serif;
-  color: #242424;
-  font-size: 24px;
+  width:900px;
+  color:#242424;
+  font-size: 25px;
   font-weight: 100;
   line-height: 36px;
   text-align: left;
-  width:693px;
-
 }
-
 footer
 {
   background-color: #434445;
-  font-size: 24px;
-  height: 132px;
+  height: 80px;
   color: #a4a4a4;
+  font-size: 25px;
   font-style: italic;
-  text-align: left;
+  text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-}
-.project-photo
-{
-  
 }
