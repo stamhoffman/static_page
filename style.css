@@ -1,38 +1,27 @@
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300i,400,700');
-
-head
-{
+head {
   background-color: #434445;
 }
 
-body
-{
-  font-family: 'Roboto',sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-html,
-body
-{
+html, body {
   height: 100%;
 }
 
-.container
-{
+.container {
   min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.content
-{
+.content {
   flex: 1;
 }
 
-
-
-header
-{
+header {
   border-width: 0.14px;
   border-color: #b5b7ba;
   border-style: solid;
@@ -43,33 +32,29 @@ header
   align-items: center;
 }
 
-header a
-{
-  color:#4d4d4d;
+header a {
+  color: #4d4d4d;
   font-size: 25px;
   font-weight: 100;
   text-align: left;
   text-decoration: none;
 }
 
-h1
-{
-  color:#2e353d;
+h1 {
+  color: #2e353d;
   font-size: 30px;
   font-weight: 200;
   text-align: center;
 }
 
-.show-img
-{
+.show-img {
   display: block;
   margin: 0 auto 3%;
   width: 150px;
   height: 40px;
 }
 
-.main
-{
+.main {
   display: flex;
   color: #24242424;
   font-size: 20px;
@@ -80,40 +65,50 @@ h1
   flex-wrap: wrap;
 }
 
-.main img
-{
-  width: 250px;
+.main img {
+  width: 300px;
   height: 400px;
 }
 
-.project-img img
-{
+.project-img img {
   width: 250px;
   height: 200px;
+  margin:0 auto;
 }
 
-sp
+.your-class img
 {
-  width: 8%;
+  width: 300px;
+  height: 300px;
 }
 
-ivb
+.contact-slider
 {
-  width:50px;
+  width: 300px;
+  margin:0 auto;
 }
 
+.slick-next{
+    right: 20px;
+    z-index: 2;
+}
 
-p
-{
-  width:900px;
-  color:#242424;
+.slick-prev{
+    left: 20px;
+    z-index: 2;
+}
+
+p {
+  width: 500px;
+  color: #242424;
   font-size: 25px;
   font-weight: 100;
   line-height: 36px;
   text-align: left;
+  padding: 5%;
 }
-footer
-{
+
+footer {
   background-color: #434445;
   height: 80px;
   color: #a4a4a4;
@@ -123,4 +118,9 @@ footer
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+sp
+{
+  width: 10%;
 }
